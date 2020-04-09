@@ -1,15 +1,23 @@
-const grade = 80;
-if(grade>80){
+const books = require ("./books.js")
+console.log (books);
+for(let v = 0 ; v<books.length; v++){
+const author = books[v].author;
+const title = books[v].title;
+var text2 = 'Author' + author;
+var text1 = 'book' + title;
 
-    console.log("you have an A")
+console.log (text2);
+console.log (text1);
+}
 
-}else if
-    (grade>=65 && grade <80){
-    console.log("you have a B")
-}else if (grade >=50 && grade < 65){
-console.log("you passed")
+for(let v =0; v< books.length ; v++){
+if( v>=350){
+console.log(text1);
+}else{
+    const title = books[v].pages;
+    var text3 = (title)
+    console.log (text3);
+}
 
-}else if 
-(grade < 50){
-    console.log ("you failed ")
+
 }
